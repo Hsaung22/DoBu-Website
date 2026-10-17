@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>DoBu | My Account</title>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body class="dashboard-page">
+
+    <header>
+
+        <div class="container navbar">
+
+            <a href="index.html" class="logo">DOBU<span>.</span></a>
+
+            <button class="menu-btn">
+                <i class="fa-solid fa-bars"></i>
+            </button>
+
+            <ul class="nav-links">
+
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="classes.html">Classes</a></li>
+                <li><a href="membership.html">Membership</a></li>
+                <li><a href="instructors.html">Instructors</a></li>
+                <li><a href="forum.html">Community</a></li>
+                <li><a href="dashboard.html" class="active">My Account</a></li>
+                <li><a href="contact.html">Contact</a></li>
+
+            </ul>
+
+        </div>
+
+    </header>
+
+
+    <section class="page-hero">
+
+        <div class="container">
+
+            <h1>MY ACCOUNT</h1>
+
+            <p>Manage your DoBu membership.</p>
+
+        </div>
+
+    </section>
+
+
+    <section>
+
+        <div class="container dashboard">
+
+
+            <aside class="sidebar">
+
+                <h2>Account Menu</h2>
+
+                <br>
+
+                <a href="#profile" class="active">
+                    <i class="fa-solid fa-user"></i>
+                    Profile
+                </a>
+
+                <a href="#membership">
+                    <i class="fa-solid fa-id-card"></i>
+                    Membership
+                </a>
+
+                <a href="#history">
+                    <i class="fa-solid fa-clock-rotate-left"></i>
+                    Training History
+                </a>
+
+                <a href="classes.html">
+                    <i class="fa-solid fa-calendar"></i>
+                    Timetable
+                </a>
+
+                <a href="#" onclick="logout()">
+                    <i class="fa-solid fa-right-from-bracket"></i>
+                    Logout
+                </a>
+
+            </aside>
+
+
+            <div class="dashboard-content">
+
+
+                <div class="dashboard-card" id="profile">
+
+                    <h2>
+                        Welcome, <span id="dashboardName">Member</span>
+                    </h2>
+
+                    <br>
+
+                    <p style="color:#9d91aa;">
+                        Email Address
+                    </p>
+
+                    <p id="dashboardEmail"></p>
+
+                </div>
+
+
+                <div class="dashboard-card" id="membership">
+
+                    <h2>Membership Status</h2>
+
+                    <br>
+
+                    <p>
+                        Current Plan:
+                        <strong id="dashboardMembership">
+                            Basic
+                        </strong>
+                    </p>
+
+                    <br>
+
+                    <span class="status">
+                        ACTIVE
+                    </span>
+
+                    <br><br>
+
+                    <p style="color:#9d91aa;">
+                        Monthly Price
+                    </p>
+
+                    <h2 id="dashboardPrice">
+                        £25 / Month
+                    </h2>
+
+                    <br>
+
+                    <div id="membershipMessage" class="form-message"></div>
+
+
+                    <form id="membershipForm">
+
+                        <div class="form-group">
+
+                            <label>Change Membership</label>
+
+                            <select id="membershipSelect">
+
+                                <option value="Basic">Basic — £25/month</option>
+
+                                <option value="Intermediate">
+                                    Intermediate — £35/month
+                                </option>
+
+                                <option value="Advanced">
+                                    Advanced — £45/month
+                                </option>
+
+                                <option value="Elite">
+                                    Elite — £60/month
+                                </option>
+
+                                <option value="Junior">
+                                    Junior — £25/month
+                                </option>
+
+                            </select>
+
+                        </div>
+
+                        <button class="btn btn-primary">
+                            UPDATE MEMBERSHIP
+                        </button>
+
+                    </form>
+
+                </div>
+
+
+                <div class="dashboard-card" id="history">
+
+                    <h2>Training History</h2>
+
+                    <br>
+
+                    <div id="trainingHistory"></div>
+
+                </div>
+
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <footer>
+
+        <div class="container footer-grid">
+
+            <div class="footer-col">
+
+                <a href="index.html" class="logo">DOBU<span>.</span></a>
+
+                <p>
+                    Professional martial arts training for strength,
+                    confidence and discipline.
+                </p>
+
+            </div>
+
+            <div class="footer-col">
+
+                <h3>Pages</h3>
+
+                <a href="about.html">About Us</a>
+                <a href="classes.html">Classes</a>
+                <a href="membership.html">Membership</a>
+
+            </div>
+
+            <div class="footer-col">
+
+                <h3>Community</h3>
+
+                <a href="forum.html">Forum</a>
+                <a href="instructors.html">Instructors</a>
+
+            </div>
+
+            <div class="footer-col">
+
+                <h3>Contact</h3>
+
+                <p>01234 567890</p>
+                <p>info@dobumartialarts.com</p>
+
+            </div>
+
+        </div>
+
+        <div class="copyright">
+            © 2026 DoBu Martial Arts. All Rights Reserved.
+        </div>
+
+    </footer>
+
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>

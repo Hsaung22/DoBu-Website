@@ -1,0 +1,296 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>DoBu | Community Forum</title>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+
+    <header>
+
+        <div class="container navbar">
+
+            <a href="index.html" class="logo">DOBU<span>.</span></a>
+
+            <button class="menu-btn">
+                <i class="fa-solid fa-bars"></i>
+            </button>
+
+            <ul class="nav-links">
+
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="classes.html">Classes</a></li>
+                <li><a href="membership.html">Membership</a></li>
+                <li><a href="instructors.html">Instructors</a></li>
+                <li><a href="forum.html" class="active">Community</a></li>
+                <li><a href="login.html">My Account</a></li>
+                <li><a href="contact.html">Contact</a></li>
+
+            </ul>
+
+        </div>
+
+    </header>
+
+
+    <section class="page-hero">
+
+        <div class="container">
+
+            <h1>COMMUNITY FORUM</h1>
+
+            <p>Connect, discuss and learn with fellow members.</p>
+
+        </div>
+
+    </section>
+
+
+    <section>
+
+        <div class="container">
+
+            <div class="section-title">
+
+                <small>DOBU COMMUNITY</small>
+
+                <h2>Discussion Boards</h2>
+
+            </div>
+
+
+            <div class="forum-list">
+
+
+                <div class="forum-topic">
+
+                    <div>
+
+                        <h3>Martial Arts Tips</h3>
+
+                        <p>
+                            Training advice, techniques and martial arts discussions.
+                        </p>
+
+                    </div>
+
+                    <i class="fa-solid fa-hand-fist"></i>
+
+                </div>
+
+
+                <div class="forum-topic">
+
+                    <div>
+
+                        <h3>Nutrition & Fitness</h3>
+
+                        <p>
+                            Discuss healthy eating, fitness and recovery.
+                        </p>
+
+                    </div>
+
+                    <i class="fa-solid fa-apple-whole"></i>
+
+                </div>
+
+
+                <div class="forum-topic">
+
+                    <div>
+
+                        <h3>Events & Competitions</h3>
+
+                        <p>
+                            Talk about upcoming events, competitions and activities.
+                        </p>
+
+                    </div>
+
+                    <i class="fa-solid fa-trophy"></i>
+
+                </div>
+
+
+                <div class="forum-topic">
+
+                    <div>
+
+                        <h3>Training Advice</h3>
+
+                        <p>
+                            Share experiences and ask other members for advice.
+                        </p>
+
+                    </div>
+
+                    <i class="fa-solid fa-users"></i>
+
+                </div>
+
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <section class="features">
+
+        <div class="container">
+
+            <div class="section-title">
+
+                <small>MEMBERS ONLY</small>
+
+                <h2>Create A Discussion</h2>
+
+                <p>
+                    Please login before creating a new forum topic.
+                </p>
+
+            </div>
+
+
+            <div class="form-container">
+
+                <form id="topicForm">
+
+                    <div class="form-group">
+
+                        <label>Topic Title</label>
+
+                        <input type="text" id="topicTitle" placeholder="Enter topic title" required>
+
+                    </div>
+
+
+                    <div class="form-group">
+
+                        <label>Category</label>
+
+                        <select id="topicCategory">
+
+                            <option>Martial Arts Tips</option>
+                            <option>Nutrition & Fitness</option>
+                            <option>Events & Competitions</option>
+                            <option>Training Advice</option>
+
+                        </select>
+
+                    </div>
+
+
+                    <div class="form-group">
+
+                        <label>Description</label>
+
+                        <textarea id="topicDescription" placeholder="Write your discussion..." required></textarea>
+
+                    </div>
+
+
+                    <button type="submit" class="btn btn-primary">
+                        CREATE TOPIC
+                    </button>
+
+                </form>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <section>
+
+        <div class="container">
+
+            <div class="section-title">
+
+                <small>RECENT ACTIVITY</small>
+
+                <h2>Latest Topics</h2>
+
+            </div>
+
+            <div id="customTopics" class="forum-list">
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <footer>
+
+        <div class="container footer-grid">
+
+            <div class="footer-col">
+
+                <a href="index.html" class="logo">DOBU<span>.</span></a>
+
+                <p>
+                    Professional martial arts training for strength,
+                    confidence and discipline.
+                </p>
+
+            </div>
+
+            <div class="footer-col">
+
+                <h3>Pages</h3>
+
+                <a href="index.html">Home</a>
+                <a href="about.html">About Us</a>
+                <a href="classes.html">Classes</a>
+                <a href="membership.html">Membership</a>
+
+            </div>
+
+            <div class="footer-col">
+
+                <h3>Account</h3>
+
+                <a href="login.html">Login</a>
+                <a href="register.html">Register</a>
+                <a href="dashboard.html">Dashboard</a>
+
+            </div>
+
+            <div class="footer-col">
+
+                <h3>Contact</h3>
+
+                <p>01234 567890</p>
+                <p>info@dobumartialarts.com</p>
+
+            </div>
+
+        </div>
+
+        <div class="copyright">
+            © 2026 DoBu Martial Arts. All Rights Reserved.
+        </div>
+
+    </footer>
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>
